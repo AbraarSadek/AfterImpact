@@ -10,7 +10,7 @@ using System.IO; // Required for directory operations
  * 
  * Modified By: Abraar Sadek
  * Date Last Modified: 06/10/2024
- * 
+ * What Was Modified: Initial Creation
  */
 
 //ProjectFolderCreator Class - Creates A Set of Default Folders In The Unity Project
