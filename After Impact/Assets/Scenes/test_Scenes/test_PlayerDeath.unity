@@ -1451,6 +1451,7 @@ GameObject:
   - component: {fileID: 1059353780}
   - component: {fileID: 1059353783}
   - component: {fileID: 1059353781}
+  - component: {fileID: 1059353784}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -1544,7 +1545,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1598,6 +1599,18 @@ PolygonCollider2D:
       - {x: 2.005087, y: -0.6773899}
       - {x: 2.3264432, y: -0.6020671}
   m_UseDelaunayMesh: 0
+--- !u!114 &1059353784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059353778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed401c58fdfde0c44b46a5f25338cbe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDeath
 --- !u!1 &1088455006
 GameObject:
   m_ObjectHideFlags: 0
