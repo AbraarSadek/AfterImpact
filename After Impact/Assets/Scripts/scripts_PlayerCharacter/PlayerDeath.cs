@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 /*
  * Created Date: 10/30/2025
  * Created By: Drew Oro
@@ -7,13 +8,13 @@ using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour
 {
-    void Start()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-    }
-
-    void Update()
-    {
-        
+        GameObject otherObject = collision.gameObject;
+        if (otherObject.CompareTag("Meteorite"))
+        {
+            Time.timeScale = 0.0f;
+            SceneManager.LoadSceneAsync(3);
+        }
     }
 }
