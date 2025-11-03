@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 /*
@@ -13,8 +14,14 @@ public class PlayerDeath : MonoBehaviour
         GameObject otherObject = collision.gameObject;
         if (otherObject.CompareTag("Meteorite"))
         {
-            Time.timeScale = 0.0f;
-            SceneManager.LoadSceneAsync(3);
+            stopGame();
         }
+    }
+    IEnumerator stopGame()
+    {
+        //Death Animation
+        yield return new WaitForSeconds(2);
+        Time.timeScale = 0.0f;
+        SceneManager.LoadSceneAsync(3);
     }
 }
