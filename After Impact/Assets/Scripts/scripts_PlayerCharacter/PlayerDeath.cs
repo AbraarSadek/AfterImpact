@@ -15,6 +15,7 @@ public class PlayerDeath : MonoBehaviour
         if (otherObject.CompareTag("Meteorite"))
         {
             Debug.Log("Hit");
+            Time.timeScale = 0.0f;
             StartCoroutine(stopGame());
         }
     }
@@ -22,9 +23,8 @@ public class PlayerDeath : MonoBehaviour
     {
         //Death Animation
         Debug.Log("StopGame");
-        yield return new WaitForSeconds(2);
-        Debug.Log("Waited 2 seconds");
-        Time.timeScale = 0.0f;
-        SceneManager.LoadSceneAsync(3);
+        yield return new WaitForSecondsRealtime(1);
+        Debug.Log("Waited 1 seconds");
+        SceneManager.LoadScene(3);
     }
 }
