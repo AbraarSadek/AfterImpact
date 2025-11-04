@@ -1634,6 +1634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed401c58fdfde0c44b46a5f25338cbe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDeath
+  animator: {fileID: 92541073}
 --- !u!1 &1088455006
 GameObject:
   m_ObjectHideFlags: 0
