@@ -6,15 +6,17 @@ using UnityEngine.SceneManagement;
  * Created By: Drew Oro
  * Purpose: This script is responsible for handling PlayerDeath from the collision with the meteorites.
  */
-
 public class PlayerDeath : MonoBehaviour
 {
+    public Animator animator;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject otherObject = collision.gameObject;
         if (otherObject.CompareTag("Meteorite"))
         {
             Debug.Log("Hit");
+            animator.SetBool("isDead", true);
             Time.timeScale = 0.0f;
             StartCoroutine(stopGame());
         }
