@@ -10,6 +10,11 @@ public class PlayerDeath : MonoBehaviour
 {
     public Animator animator;
 
+    private void Start()
+    {
+        animator.SetBool("isDead", false);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject otherObject = collision.gameObject;
