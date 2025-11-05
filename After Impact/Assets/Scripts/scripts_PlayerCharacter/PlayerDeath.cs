@@ -30,7 +30,7 @@ public class PlayerDeath : MonoBehaviour
     {
         //Death Animation
         Debug.Log("StopGame");
-        yield return new WaitForSecondsRealtime(1);
+        yield return new WaitForSecondsRealtime(2.5f);
         Debug.Log("Waited 1 seconds");
         SceneManager.LoadScene(3);
     }
