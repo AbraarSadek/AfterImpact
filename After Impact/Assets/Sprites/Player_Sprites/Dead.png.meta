@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 5848094d6691ef640a28d0dcbbf07b5a
+guid: b06749b79750306419cecace49ac4b95
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3353451182718446962
-    second: Fly_003_0
+      213: 2649847697073447219
+    second: Dead_0
+  - first:
+      213: -8293461521501190705
+    second: Dead_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,27 +99,62 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fly_003_0
+      name: Dead_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 89
-        width: 442
-        height: 208
+        y: 0
+        width: 484
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27deb85551ad98e20800000000000000
-      internalID: 3353451182718446962
+      spriteID: 33123f4e07626c420800000000000000
+      internalID: 2649847697073447219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead_1
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 0
+        width: 484
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc50d84dfa4b7ec80800000000000000
+      internalID: -8293461521501190705
       vertices: []
       indices: 
       edges: []
@@ -125,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 72b4eeba5106888419f442b65154a974
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +171,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":484.0,"y":336.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Fly_003_0: 3353451182718446962
+      Dead_0: 2649847697073447219
+      Dead_1: -8293461521501190705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

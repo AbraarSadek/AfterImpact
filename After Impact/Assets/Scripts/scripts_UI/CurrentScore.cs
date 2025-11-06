@@ -17,7 +17,8 @@ using TMPro;
 
 //ScoreManager Class
 
-public class ScoreManager : MonoBehaviour {
+public class ScoreManager : MonoBehaviour
+{
 
     [Header("Game Object Referances")]
     public TextMeshProUGUI scoreText; //Reference to the Score Text game object
@@ -25,7 +26,8 @@ public class ScoreManager : MonoBehaviour {
     private float currentScore; //Float variable that will hold the current score
 
     //Update Method - Is Called Once Per Frame
-    void Update() {
+    void Update()
+    {
 
 
         //if (GameObject.FindGameObjectWithTag("Player") != null) {
