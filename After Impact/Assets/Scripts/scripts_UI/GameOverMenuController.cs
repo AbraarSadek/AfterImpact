@@ -26,5 +26,9 @@ public class GameOverMenuController : MonoBehaviour {
 
     //QuitGameButton Method - Loads the main menu scene when the "QUIT GAME" button is pressed
     public void QuitGameButton() { SceneManager.LoadSceneAsync(0); }
+    private void Start()
+    {
+
+    }
 
 } //End of GameOverMenuController Class

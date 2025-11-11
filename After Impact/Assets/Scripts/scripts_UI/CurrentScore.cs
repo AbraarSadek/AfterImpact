@@ -23,7 +23,7 @@ public class ScoreManager : MonoBehaviour
     [Header("Game Object Referances")]
     public TextMeshProUGUI scoreText; //Reference to the Score Text game object
 
-    private float currentScore; //Float variable that will hold the current score
+    public static float currentScore; //Float variable that will hold the current score
 
     //Update Method - Is Called Once Per Frame
     void Update()
