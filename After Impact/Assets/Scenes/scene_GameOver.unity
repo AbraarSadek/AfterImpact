@@ -1615,6 +1615,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e428c9d1315b284cb74221e1d0fa7c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOverMenuController
+  text_Score: {fileID: 499004920}
+  text_HighScore: {fileID: 1103975143}
 --- !u!1 &1650275083
 GameObject:
   m_ObjectHideFlags: 0

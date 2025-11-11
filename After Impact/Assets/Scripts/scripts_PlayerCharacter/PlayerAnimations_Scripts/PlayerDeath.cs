@@ -20,7 +20,6 @@ public class PlayerDeath : MonoBehaviour
         GameObject otherObject = collision.gameObject;
         if (otherObject.CompareTag("Meteorite"))
         {
-            Debug.Log("Hit");
             animator.SetBool("isDead", true);
             Time.timeScale = 0.0f;
             StartCoroutine(stopGame());
@@ -29,9 +28,7 @@ public class PlayerDeath : MonoBehaviour
     static IEnumerator stopGame()
     {
         //Death Animation
-        Debug.Log("StopGame");
         yield return new WaitForSecondsRealtime(1);
-        Debug.Log("Waited 1 seconds");
         SceneManager.LoadScene(3);
     }
 }
