@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04dc0307a27e0e04696debda0f7ed49b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Meteorite
-  meteoriteSpeed: 5
+  meteoriteSpeed: 4
   meteoriteLifetime: 8
   randomSpritesList:
   - {fileID: 21300014, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
@@ -176,3 +176,7 @@ MonoBehaviour:
   - {fileID: 21300018, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
   - {fileID: 21300020, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
   - {fileID: 21300022, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
+  - {fileID: 21300006, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
+  - {fileID: 21300008, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
+  - {fileID: 21300010, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
+  - {fileID: 21300012, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
