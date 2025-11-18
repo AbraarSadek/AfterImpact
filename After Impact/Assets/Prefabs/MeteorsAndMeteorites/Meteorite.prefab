@@ -170,3 +170,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Meteorite
   meteoriteSpeed: 5
   meteoriteLifetime: 8
+  randomSpritesList: []
