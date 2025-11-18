@@ -170,4 +170,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Meteorite
   meteoriteSpeed: 5
   meteoriteLifetime: 8
-  randomSpritesList: []
+  randomSpritesList:
+  - {fileID: 21300014, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
+  - {fileID: 21300016, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
+  - {fileID: 21300018, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
+  - {fileID: 21300020, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
+  - {fileID: 21300022, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
