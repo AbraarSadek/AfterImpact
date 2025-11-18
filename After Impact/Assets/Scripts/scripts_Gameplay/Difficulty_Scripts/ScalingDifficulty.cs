@@ -1,5 +1,5 @@
 using UnityEngine;
-using static UnityEditor.SceneView;
+//using static UnityEditor.SceneView;
 
 public class ScalingDifficulty : MonoBehaviour
 {
