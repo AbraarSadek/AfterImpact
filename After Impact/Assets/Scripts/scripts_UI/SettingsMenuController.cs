@@ -11,6 +11,7 @@ using UnityEngine.SceneManagement;
 
 //SettingsMenuController Class - Used to control the settings menu UI
 public class SettingsMenuController : MonoBehaviour {
+    [SerializeField] private AudioSource clickSFX;
 
     //BackButton Method - Loads the main menu scene when the "BACK" button is pressed
     public void BackButton() {
