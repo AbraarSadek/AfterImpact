@@ -565,7 +565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScalingDifficulty
   cameraMover: {fileID: 531654484}
   growthRate: 1.5
-  interval: 15
+  interval: 30
 --- !u!1 &567017033
 GameObject:
   m_ObjectHideFlags: 0

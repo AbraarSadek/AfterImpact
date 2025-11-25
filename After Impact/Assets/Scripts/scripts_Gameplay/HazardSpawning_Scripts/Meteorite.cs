@@ -6,6 +6,10 @@ using UnityEngine;
  * Created Date: October 30, 2025
  * Created By: Abraar Sadek
  * Purpose: This class is responsible for handling the behavior of meteorite hazards in the game.
+ * 
+ * Modified Date: November 18, 2025
+ * Modified By: Drew Oro
+ * Purpose: Added Sprite List to randomize different meteorite sprites
  */
 
 //Meteorite Class - Handles the behavior of meteorite hazards in the game
@@ -14,6 +18,8 @@ public class Meteorite : MonoBehaviour {
     [Header("Meteorite Settings")]
     public float meteoriteSpeed = 5f; //Speed at which the meteorite falls
     public float meteoriteLifetime = 8f; //Lifetime of the meteorite before it gets destroyed
+
+    public List<Sprite> randomSpritesList = new List<Sprite>();
 
     private Vector2 meteoriteMovementDirection; //Direction of the meteorite movement
 
@@ -34,6 +40,13 @@ public class Meteorite : MonoBehaviour {
         GetComponent<Rigidbody2D>().angularVelocity = Random.Range(-200f, 200f);
 
         //Destroy(gameObject, meteoriteLifetime); //Destroy the meteorite after its lifetime expires
+
+        int randomCount = Random.Range(0, randomSpritesList.Count);
+        if (randomCount > 0)
+        {
+            GetComponent<SpriteRenderer>().sprite = randomSpritesList[randomCount];
+        }
+        
 
     } //End of Start Method
 
