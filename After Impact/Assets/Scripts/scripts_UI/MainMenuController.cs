@@ -14,6 +14,10 @@ public class MainMenuController : MonoBehaviour {
 
     [SerializeField] private AudioSource clickSFX;
 
+    private void Start() {
+        Time.timeScale = 1f; //Resets time scale in case it was changed during gameplay
+    }
+
     //PlayGameButton Method - Loads the level scene when the "PLAY GAME" button is pressed
     public void PlayGameButton() 
     { 
@@ -33,7 +37,6 @@ public class MainMenuController : MonoBehaviour {
         Debug.Log("Closing Application");
         Application.Quit(); 
     }
-
 
     private IEnumerator LoadSceneWithSFX(int sceneIndex)
     {

@@ -26,8 +26,6 @@ public class GameOverMenuController : MonoBehaviour {
     {
         StartCoroutine(LoadSceneWithSFX(2));
     }
-  
-
 
     //SettingsButton Method - Loads the settings scene when the "SETTINGS" button is pressed
     public void SettingsButton() 
@@ -56,8 +54,10 @@ public class GameOverMenuController : MonoBehaviour {
 
     public GameObject text_Score;
     public GameObject text_HighScore;
-    private void Start()
-    {
+    private void Start() {
+
+        Time.timeScale = 1f; //Resets time scale in case it was changed during gameplay
+
         DataManager.LoadData();
 
         int score = ((int)ScoreManager.currentScore);
