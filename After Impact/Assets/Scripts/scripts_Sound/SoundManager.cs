@@ -90,7 +90,7 @@ public class SoundManager : MonoBehaviour
     {
         // Decide which music to play based on scene name
         AudioClip clipToPlay = null;
-
+        bool isGameOver = false;
         // NOTE: Scene names must match your Build Settings
         if (scene.name == "scene_MainMenu")
         {
@@ -103,6 +103,7 @@ public class SoundManager : MonoBehaviour
         else if (scene.name == "scene_GameOver")
         {
             clipToPlay = gameOverMusic;
+            isGameOver = true;
         }
         else if (scene.name == "scene_SettingsMenu")
         {
@@ -132,7 +133,13 @@ public class SoundManager : MonoBehaviour
 
             //Assign and play the clip
             musicSource.clip = clipToPlay;
-            musicSource.loop = true;            // Background music usually loops
+            if (isGameOver)
+            {
+                musicSource.loop = false;
+            }
+            else {
+                musicSource.loop = true;            // Background music usually loops
+            }
             musicSource.Play();
         }
     }
