@@ -27,7 +27,7 @@ public class PausePanelController : MonoBehaviour {
     void Update() {
 
         //If-Statement - Check for Escape key press to toggle pause state
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P)) {
 
             //Nested If-Else Statement - Toggle between pausing and resuming the game
             if (isPaused) {
