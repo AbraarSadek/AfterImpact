@@ -229,6 +229,10 @@ PrefabInstance:
       propertyPath: gameOverMusic
       value: 
       objectReference: {fileID: 8300000, guid: a493280d430a9c34995c86bd2ba57733, type: 3}
+    - target: {fileID: 8440702881989620135, guid: e89801fe0b8d94f43a648c16eade4a17, type: 3}
+      propertyPath: gameplayMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 89ae4ed69dd5c1d4b904ee3d7e5e42c9, type: 3}
     - target: {fileID: 9181779685488093991, guid: e89801fe0b8d94f43a648c16eade4a17, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1327.9829
